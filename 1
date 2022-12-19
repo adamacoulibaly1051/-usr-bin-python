@@ -1,0 +1,19 @@
+ 1 #!/usr/bin/python
+ 2 #-*- coding:utf-8 -*-
+ 3 
+ 4 def main():
+ 5     n = int(raw_input('Enter a number:'))
+ 6     print n,'=',
+ 7     while(n!=1):
+ 8         for i in range(2,n+1):
+ 9             if (n%i)==0:
+10                 n/=i
+11                 if(n == 1):
+12                     print '%d'%(i)
+13                 else:
+14                     print '%d *'%(i),
+15                 break
+16             
+17         
+18 if __name__ == "__main__":
+19     main()
